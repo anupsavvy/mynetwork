@@ -1,7 +1,55 @@
-<!DOCTYPE web-app PUBLIC
- "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
- "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>My Network</display-name>
+	<listener>
+    		<listener-class>com.sonic.mynetwork.web.Init</listener-class>
+    </listener>  
+	<context-param>
+		<param-name>apiKey</param-name>
+		<param-value>p1k7dzy3a01s</param-value>
+	</context-param>
+	<context-param>
+		<param-name>apiSecret</param-name>
+		<param-value>MKYJljuHdy2HFn60</param-value>
+	</context-param>
+	<context-param>
+		<param-name>token</param-name>
+		<param-value>99ef24de-fab8-449d-8f00-551938f928bc</param-value>
+	</context-param>
+	<context-param>
+		<param-name>tokenSecret</param-name>
+		<param-value>9ec95539-62f9-41bf-8069-08546fc38650</param-value>
+	</context-param>
+	<servlet>
+		<servlet-name>getnetwork</servlet-name>
+		<servlet-class>com.sonic.mynetwork.web.GetNetworkServlet</servlet-class>
+	</servlet>
 
-<web-app>
-  <display-name>Archetype Created Web Application</display-name>
+	<servlet-mapping>
+		<servlet-name>getnetwork</servlet-name>
+		<url-pattern>/getnetwork</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>authurl</servlet-name>
+		<servlet-class>com.sonic.mynetwork.web.AuthorizationURLServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>authurl</servlet-name>
+		<url-pattern>/authurl</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>download</servlet-name>
+		<servlet-class>com.sonic.mynetwork.web.DownloadServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>download</servlet-name>
+		<url-pattern>/download</url-pattern>
+	</servlet-mapping>
+
 </web-app>
