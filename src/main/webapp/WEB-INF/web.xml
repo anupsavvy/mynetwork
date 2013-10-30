@@ -9,19 +9,19 @@
     </listener>  
 	<context-param>
 		<param-name>apiKey</param-name>
-		<param-value>p1k7dzy3a01s</param-value>
+		<param-value>xxxxxxxx</param-value>
 	</context-param>
 	<context-param>
 		<param-name>apiSecret</param-name>
-		<param-value>MKYJljuHdy2HFn60</param-value>
+		<param-value>xxxxxxxx</param-value>
 	</context-param>
 	<context-param>
 		<param-name>token</param-name>
-		<param-value>99ef24de-fab8-449d-8f00-551938f928bc</param-value>
+		<param-value>xxxxxxx</param-value>
 	</context-param>
 	<context-param>
 		<param-name>tokenSecret</param-name>
-		<param-value>9ec95539-62f9-41bf-8069-08546fc38650</param-value>
+		<param-value>xxxxxxxx</param-value>
 	</context-param>
 	<servlet>
 		<servlet-name>getnetwork</servlet-name>
